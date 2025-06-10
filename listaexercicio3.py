@@ -26,7 +26,7 @@ st.set_page_config(
 st.header("Lista de Exercício 3")
 
 import pandas as pd
-arquivo = "raw.githubusercontent.com/lauraamperin/exercicios_lista3/refs/heads/main/projetos.csv"
+arquivo = "https://raw.githubusercontent.com/lauraamperin/exercicios_lista3/refs/heads/main/projetos.csv"
 df_projetos = pd.read_csv(arquivo, sep=";")
 st.dataframe(df_projetos)
 
