@@ -104,7 +104,7 @@ fig, ax = plt.subplots()
 df_projetos["Data"] = pd.to_datetime(dict(year=df_projetos["ano"], month=df_projetos["mes"], day=1))
 df_projetos = df_projetos.sort_values("Data")
 
-ax.figure(figsize=(10, 6))
+
 ax.plot(df_projetos["Data"], df_projetos["Projeto1"], label= "Projeto1")
 ax.plot(df_projetos["Data"], df_projetos["Projeto2"], label= "Projeto2")
 ax.plot(df_projetos["Data"], df_projetos["Projeto3"], label= "Projeto3")
