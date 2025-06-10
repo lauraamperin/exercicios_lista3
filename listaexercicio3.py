@@ -100,7 +100,7 @@ Dicas:
 """
 
 import matplotlib.pyplot as plt
-fig, ax = plt.subplots()
+fig, ax = plt.subplots(figsize=(10, 6))
 df_projetos["Data"] = pd.to_datetime(dict(year=df_projetos["ano"], month=df_projetos["mes"], day=1))
 df_projetos = df_projetos.sort_values("Data")
 
